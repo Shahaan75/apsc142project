@@ -7,6 +7,7 @@ set(CMAKE_CXX_FLAGS  "-Wall -pedantic -Wno-format -Wno-unused-parameter -fexcept
 
 file(COPY map.txt DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 
-add_executable(project apsc142project.c colours.c map.c game.c ghost.c)
+add_executable(project apsc142project.c colours.c map.c game.c ghost.c
+        main.c)
 add_executable(tests tests.cpp colours.c map.c game.c ghost.c)
 
